@@ -1,0 +1,52 @@
+:root{
+  /*Colores*/
+  --dark-blue:#022e4b;
+  --mid-blue:#185e8d;
+  --light-blue:hsl(204, 71%, 57%);
+  --dark-black:#17191a;
+  --mid-black:#313233;
+  --grey:#e0e5e9;  
+}
+
+body {
+  background-color: var(--dark-black);
+}
+
+header{
+  height: 600px;
+  background-image: url('../img/pikwizard-c6166f90ac7722e624dbb9a5f730c0ea.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+.nav-style li{
+  list-style: none;
+  text-decoration:none;
+}
+
+.li-style a{
+  writing-mode: vertical-lr;
+  font-weight: bold;
+  color:var(--light-blue);
+  text-decoration:none;
+}
+
+.profile-image{
+  height:250px;
+  border-radius:100%;
+  position: relative;
+  top:-150px
+}
+
+.portfolio-img{
+  height: 340px;
+}
+
+#portfolio h4{
+  color: white;
+}
+
+h2, p{
+  color:var(--grey) ;
+}
