@@ -3,22 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>  <!--Incluir iconos-->
+    <link rel="stylesheet" href="./css/hamburguer.css">
+    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
+
+    <title>Porfolio Ma. Helena Santos P.</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="fixed-top">
-        <nav class="navbar navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-light" id="nav-container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onClick='boton()'>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="nav-style">
-            <ul>
+            <ul id="menu">
+              <li class="p-1 li-style"><a href="#header">Home</a></li>
               <li class="p-1 li-style"><a href="#profile">Profile</a></li>
               <li class="p-1 li-style"><a href="#education">Education</a></li>
               <li class="p-1 li-style"><a href="#portfolio">Portfolio</a></li>
@@ -29,60 +35,64 @@
     </header>
 
     <main>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="card text-center mb-2"  id="profile">
-              <img src="./img/imgPortafolio.jpg" class="m-5 mx-auto profile-image" alt="profile-image">
-              <h4>Profile</h4>
+          <div class="col-12" id="profile">
+            <div class="card text-center">
+              <img src="./img/imgPortafolio.jpg" class="profile-image m-5 mx-auto" alt="profile-image">
               <div class="card-body">
+                <h4 class="card-title">Profile</h4>
                 <div class="info-heading">
-                  <h4 class="text-center text-capitalize">maria santos</h4>
-                  <h6 class="text-center">Frontend Dev</h6>
+                  <h4 class="card-title text-capitalize">maria helena santos pineda</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Frontend Develop</h5>
                 </div>
                 <div class="icon-grup">
                   <a href="https://twitter.com/msantospineda" class="mx-1"><i class="fab fa-twitter"></i></a>
-                  <a href="https://www.google.com/" class="mx-1"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/in/msantospineda/" class="mx-1"><i class="fab fa-linkedin-in"></i></a>
                   <a href="https://github.com/mhsantosp" class="mx-1"><i class="fab fa-github-alt"></i></a>
-                  <a href="https://www.google.com/" class="mx-1"><i class="fas fa-mail-bulk"></i></a>
+                  <a href="mailto:maria.santosp@daiclover.com" class="mx-1"><i class="fas fa-mail-bulk"></i></a>
                 </div>
-              </div>
-            </div> 
-            <div class="card text-center my-2" id="education">              
-              <h4>Education</h4>
-              <div class="card-body">
-                <div>
-                  <h6>Middle School</h6>
-                </div>
-                <div class="h6"><small>San Juan</small></div>
-                <div class="h6"><small>Feb 2008 - Nov 2010</small></div>
-                <div>
-                  <h6>High School</h6>
-                </div>
-                <div class="h6"><small>San Judas</small></div>
-                <div class="h6"><small>Feb 2010 - Nov 2014</small></div>
-                <div>
-                  <h6>Frontend dev</h6>
-                </div>
-                <div class="h6"><small>Academia Geek</small></div>
-                <div class="h6"><small>Feb 2020 - Dec 2020</small></div>
               </div>
             </div> 
           </div>
-        </div>
-        <div class="row" id="portfolio">
-          <div class="col-12"><h4 class="text-center">Portfolio</h4></div>
-          <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img w-100" src="./img/aseoseguro.png" alt=""></div>
-          <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img w-100" src="./img/ebfactory.png" alt=""></div>
-          <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img w-100" src="./img/drupalcamp.png" alt=""></div>
-          <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img w-100" src="./img/digitalbots.png" alt=""></div>
+          <div class="col-12" id="education">
+            <div class="card text-center py-3 my-3">
+              <h4>Education</h4>
+              <div class="card-body">
+                <div>
+                  <h6>Ingeniera de Sistemas</h6>
+                </div>
+                <div class="h6"><small>Universidad Cooperativa de Colombia</small></div>
+                <div class="h6"><small>Mar. 2017</small></div>
+                <div>
+                  <h6>Curso en Testing de Software</h6>
+                </div>
+                <div class="h6"><small>Universidad EAFIT</small></div>
+                <div class="h6"><small>Sep. 2017</small></div>
+                <div>
+                  <h6>Frontend Developer</h6>
+                </div>
+                <div class="h6"><small>Academia Geek</small></div>
+                <div class="h6"><small>Actual Oct/20</small></div>
+              </div>
+            </div> 
+          </div>
+          <div class="col-12" id="portfolio">
+            <h4 class="text-center">Portfolio</h4>
+            <div class="row">
+              <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img img-fluid img-thumbnail" src="./img/aseoseguro.png" alt=""></div>
+              <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img img-fluid img-thumbnail" src="./img/ebfactory.png" alt=""></div>
+              <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img img-fluid img-thumbnail" src="./img/drupalcamp.png" alt=""></div>
+              <div class="col-12 col-md-6 text-center mt-3"><img class="portfolio-img img-fluid img-thumbnail" src="./img/digitalbots.png" alt=""></div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="style-footer m-4">
-        <h2>Maria Santos</h2>
+      <div class="style-footer m-4 text-center">
+        <h6>Maria Santos</h6>
         <p>Todos los derechos reservados</p>
       </div>
     </footer>

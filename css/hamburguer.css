@@ -1,0 +1,84 @@
+.navbar-light .navbar-toggler {
+  border: 1px solid rgb(2 83 8 / 99%);
+  background-color: rgb(126 130 127 / 41%);
+}
+
+.navbar-toggler {
+  width: 56px;
+  height: 44px;
+  padding: 0;
+  display: block;
+  position: relative;
+  -webkit-transition: margin 600ms;
+  -moz-transition: margin 600ms;
+  transition: margin 600ms;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 3.8em;
+  height: 0.2em;
+  margin: 0.9em auto;
+  border-right: 2.8em solid #68037c;
+  border-left: 0.6em solid #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+  -moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+  transition-property: transform, margin, border-right-color, box-shadow;
+  -webkit-transition-duration: 600ms;
+  -moz-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+
+.navbar-toggler-icon:nth-of-type(1) {
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.navbar-toggler-icon:nth-of-type(2) {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+/*pushed*/
+.pushed .navbar-toggler-icon:nth-of-type(1) {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
+
+.pushed .navbar-toggler-icon:nth-of-type(2) {
+  margin-left: 1.4em;
+  -webkit-transform: rotate(-137deg) translateY(-1.5em);
+  -moz-transform: rotate(-137deg) translateY(-1.5em);
+  -ms-transform: rotate(-137deg) translateY(-1.5em);
+  -o-transform: rotate(-137deg) translateY(-1.5em);
+  transform: rotate(-137deg) translateY(-1em);
+}
+
+.pushed .navbar-toggler-icon:nth-of-type(3) {
+  margin-left: 0.5em;
+  -webkit-transform: rotate(-44deg);
+  -moz-transform: rotate(-44deg);
+  -ms-transform: rotate(-44deg);
+  -o-transform: rotate(-44deg);
+  transform: rotate(-44deg) translateX(0.5em);
+}
+
+.pushed .navbar-toggler:hover .navbar-toggler-icon:nth-of-type(2) {
+  border-right-color: #e9b8b9;
+  box-shadow: 0.4em 0 0.6em 0.1em rgba(205, 40, 44, 0.75);
+}
+
+.pushed .navbar-toggler:hover .navbar-toggler-icon:nth-of-type(3) {
+  border-right-color: #ddf1da;
+  box-shadow: 0.4em 0 0.6em 0.1em rgba(83, 228, 68, 0.65);
+}
