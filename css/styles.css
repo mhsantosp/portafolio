@@ -89,3 +89,12 @@ a .fa-linkedin-in:hover,
 a .fa-github-alt:hover {
   color: #0056b3;
 }
+
+.prof-conten {
+  position: relative;
+  top: -110px;
+}
+
+footer {
+  background-color: cadetblue;
+}
