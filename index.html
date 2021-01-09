@@ -16,19 +16,19 @@
     <header id="header">
       <div class="fixed-top">
         <nav class="navbar navbar-light" id="nav-container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onClick='boton()'>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuContenido" aria-controls="menuContenido" aria-expanded="false" aria-label="Toggle navigation" onClick='boton()'>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
+        <div class="collapse navbar-collapse" id="menuContenido">
           <div class="nav-style">
-            <ul id="menu">
-              <li class="p-1 li-style"><a href="#header">Home</a></li>
-              <li class="p-1 li-style"><a href="#profile">Profile</a></li>
-              <li class="p-1 li-style"><a href="#education">Education</a></li>
-              <li class="p-1 li-style"><a href="#portfolio">Portfolio</a></li>
+            <ul class="navbar-nav" id="menu">
+              <li class="p-1 li-style nav-item"><a class="nav-link active" href="#header">Home</a></li>
+              <li class="p-1 li-style nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+              <li class="p-1 li-style nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <li class="p-1 li-style nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             </ul>
           </div>
         </div>
@@ -40,12 +40,12 @@
         <div class="row">
           <div class="col-12" id="profile">
             <div class="card text-center pb-3 mb-3">
-              <img src="./img/imgPortafolio.jpg" class="profile-image m-5 mx-auto" alt="profile-image">
-              <div class="card-body prof-conten">
-                <h4 class="card-title">Profile</h4>
+              <img src="./img/imgPortafolio.jpg" class="profile-image mx-auto" alt="profile-image">
+              <div class="card-body py-0 prof-conten">
+                <!-- <h4 class="card-title">Profile</h4> -->
                 <div class="info-heading">
                   <h4 class="card-title text-capitalize">maria helena santos pineda</h4>
-                  <h5 class="card-subtitle mb-2 text-muted">Frontend Develop</h5>
+                  <h5 class="card-subtitle mb-2 text-muted">Systems Engineer & Frontend Develop</h5>
                 </div>
                 <div class="icon-grup">
                   <a href="https://twitter.com/msantospineda" class="mx-1"><i class="fab fa-twitter"></i></a>

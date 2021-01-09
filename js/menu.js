@@ -12,3 +12,7 @@ function boton() {
     y.classList.remove("pushed");
   }
 }
+
+// $('.navbar-nav a').on('click', function(){
+//   $('.navbar-toggler').click(); //bootstrap 4.x
+// });

@@ -3,6 +3,11 @@
   background-color: rgb(126 130 127 / 41%);
 }
 
+button.navbar-toggler:hover {
+  border: 1px solid #e9b8b9 !important;
+  box-shadow: 0.4em 0 0.6em 0.1em rgba(83, 228, 68, 0.65);
+}
+
 .navbar-toggler {
   width: 56px;
   height: 44px;

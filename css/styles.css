@@ -36,6 +36,10 @@ button:focus {
   box-shadow: none;
 }
 
+.fixed-top {
+  width: max-content;
+}
+
 .collapsing,
 .collapse.show,
 .collapse:not(.show) {
@@ -69,7 +73,7 @@ button:focus {
   height: 250px;
   border-radius: 100%;
   position: relative;
-  top: -150px;
+  top: -125px;
 }
 
 a .fa-twitter {
@@ -92,7 +96,7 @@ a .fa-github-alt:hover {
 
 .prof-conten {
   position: relative;
-  top: -110px;
+  top: -80px;
 }
 
 footer {
